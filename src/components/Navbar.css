@@ -25,20 +25,49 @@
     display: flex;
     align-items: center;
 }
+
 .nav-menu li {
     padding: 0 1rem;
 }
+
 .nav-menu a {
     font-size: 1rem;
     font-weight: 600;
     color: #333;
 }
+
 .hamburger {
     display: none;
 }
 
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) {
     .hamburger {
         display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        top: 90px;
+        right: -100%;
+        width: 50%;
+        padding-top: 15px;
+        height: 100vh;
+        transition: 0.6s;
+        z-index: 2;
+        background-color: #fff;
+        border-left: 1px solid #eee;
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+    .nav-menu li {
+        padding: 1rem;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+    .nav-menu a {
+        font-size: 1.2rem;
     }
 }
