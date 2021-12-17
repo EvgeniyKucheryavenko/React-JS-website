@@ -1,9 +1,36 @@
 import React from 'react';
+import {FaBars} from "react-icons/fa";
+import './Navbar.css';
+
 
 const Navbar = () => {
     return (
         <div>
-
+            <div className="header">
+                <div className="container">
+                    <h1>De<span className="primary">fi</span></h1>
+                    <ul className="nav-menu">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/">Featured</a>
+                        </li>
+                        <li>
+                            <a href="/">Earn</a>
+                        </li>
+                        <li>
+                            <a href="/">Contact</a>
+                        </li>
+                    </ul>
+                    <div className="btn-group">
+                        <button className="btn">Connect Wallet</button>
+                    </div>
+                    <div className="hamburger">
+                        <FaBars size={20} style={{color: '#333333'}}/>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
