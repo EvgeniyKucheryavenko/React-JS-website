@@ -39,7 +39,10 @@
 .hamburger {
     display: none;
 }
-
+.nav-menu a:hover {
+    color: var(--primary);
+    transition: 0.5s;
+}
 @media screen and (max-width: 1240px) {
     .hamburger {
         display: flex;
