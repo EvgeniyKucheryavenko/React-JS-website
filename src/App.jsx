@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import Featured from "./components/Featured";
 import Signup from "./components/Signup";
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Hero/>
             <Featured/>
             <Signup/>
+            <Footer/>
         </>
     );
 };
